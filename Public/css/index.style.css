@@ -1,0 +1,102 @@
+
+body{
+    background-color: #E5E5E5;
+  }
+  .navbar{
+    background-color: white;
+    margin: -15px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-right: 85px;
+  }
+  
+  .form-search{
+    margin-right: -70px;
+  }
+  .btn-search{
+    background-color: transparent;
+    border-color: #0D28A6;
+    color: #0D28A6;
+  }
+  .sidebar{
+      position: absolute;
+      top: 0;
+      background-color: #0D28A6;
+  }
+  .btn-menu{
+      background-color: transparent;
+      border-color: transparent;
+  
+  }
+  li {
+      list-style: none;
+  
+    }
+  
+    a {
+      text-decoration: none;
+    }
+  
+    .sidebar {
+      width: 90px;
+      font-size: 12px;
+      height: 100vh;
+      position: fixed;
+      margin-left: -300px;
+      transition: 0.4s;
+    }
+  
+    .active-main-content {
+      margin-left: 90px;
+    }
+  
+    .active-sidebar {
+      margin-left: 0;
+    }
+  
+    #main-content {
+      transition: 0.4s;
+    }
+      .sidebar {
+      width: 90px;
+      font-size: 12px;
+      height: 100vh;
+      position: fixed;
+      margin-left: -300px;
+      transition: 0.4s;
+    }
+  
+    .active-main-content {
+      margin-left: 90px;
+    }
+  
+    .active-sidebar {
+      margin-left: 0;
+    }
+  
+    #main-content {
+      transition: 0.4s;
+    }
+    .offcanvas-start {
+      width: 220px !important;
+      margin-left: 90px !important;
+  }
+.add{
+    margin-top: 90px;
+    margin-left: 20px;
+}
+.btn-add{
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    margin-top: 30px;
+    width: 150px;
+    height: 60px;
+    background-color: #0D28A6;
+    border: transparent;
+    color: white;
+}
+.card{
+    margin-top: 60px;
+
+}

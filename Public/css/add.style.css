@@ -1,0 +1,120 @@
+
+body{
+  background-color: #E5E5E5;
+}
+.navbar{
+  background-color: white;
+  margin: -15px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-right: 85px;
+}
+
+.form-search{
+  margin-right: -70px;
+}
+.btn-search{
+  background-color: transparent;
+  border-color: #0D28A6;
+  color: #0D28A6;
+}
+.sidebar{
+    position: absolute;
+    top: 0;
+    background-color: #0D28A6;
+}
+.btn-menu{
+    background-color: transparent;
+    border-color: transparent;
+
+}
+li {
+    list-style: none;
+
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .sidebar {
+    width: 90px;
+    font-size: 12px;
+    height: 100vh;
+    position: fixed;
+    margin-left: -300px;
+    transition: 0.4s;
+  }
+
+  .active-main-content {
+    margin-left: 90px;
+  }
+
+  .active-sidebar {
+    margin-left: 0;
+  }
+
+  #main-content {
+    transition: 0.4s;
+  }
+    .sidebar {
+    width: 90px;
+    font-size: 12px;
+    height: 100vh;
+    position: fixed;
+    margin-left: -300px;
+    transition: 0.4s;
+  }
+
+  .active-main-content {
+    margin-left: 90px;
+  }
+
+  .active-sidebar {
+    margin-left: 0;
+  }
+
+  #main-content {
+    transition: 0.4s;
+  }
+  .offcanvas-start {
+    width: 220px !important;
+    margin-left: 90px !important;
+}
+.card{
+  margin-top: 30px;
+}
+.add h4{
+  margin-top: 90px;
+}
+.nama{
+  margin-right: 60px;
+}
+.sewa{
+  margin-right: 15px;
+}
+.ukuran{
+  margin-right: 59px;
+}
+.foto{
+  margin-right: 70px;
+}
+.btn-cf{
+  width: 90px;
+  position: absolute;
+  color: #0D28A6;
+  border-color: #0D28A6;
+  bottom: 0;
+  left: 0;
+  margin-right: 30px;
+}
+.btn-af{
+  width: 90px;
+  background-color: #0D28A6;
+  color: white;
+  border-color: transparent;
+  position: absolute;
+  bottom: 0;
+  margin-left: 90px;
+}
+
