@@ -1,13 +1,17 @@
 
 body{
-    background-color: #E5E5E5;
+  background-color: #F4F5F7;
   }
   .navbar{
     background-color: white;
     margin: -15px;
     padding-top: 20px;
+    margin-left: 60px;
     padding-bottom: 15px;
     padding-right: 85px;
+  }
+  .ic-menu{
+    margin-left: 150px;
   }
   
   .form-search{
@@ -18,10 +22,44 @@ body{
     border-color: #0D28A6;
     color: #0D28A6;
   }
+  .sidenav {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0D28A6;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-right: 10px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    margin-left: 160px;
+    font-size: 28px; 
+    padding: 0px 10px;
+  }
+  .htext{
+    color: black;
+  }
   .sidebar{
       position: absolute;
       top: 0;
-      background-color: #0D28A6;
+      margin-top: 50px;
+      background-color: white;
   }
   .btn-menu{
       background-color: transparent;
@@ -40,6 +78,7 @@ body{
     .sidebar {
       width: 90px;
       font-size: 12px;
+      color: black;
       height: 100vh;
       position: fixed;
       margin-left: -300px;
@@ -47,7 +86,7 @@ body{
     }
   
     .active-main-content {
-      margin-left: 90px;
+      margin-left: 150px;
     }
   
     .active-sidebar {
@@ -58,8 +97,9 @@ body{
       transition: 0.4s;
     }
       .sidebar {
-      width: 90px;
-      font-size: 12px;
+      width: 200px;
+      font-size: 25px;
+      color: black;
       height: 100vh;
       position: fixed;
       margin-left: -300px;
@@ -67,23 +107,19 @@ body{
     }
   
     .active-main-content {
-      margin-left: 90px;
+      margin-left: 150px;
     }
   
     .active-sidebar {
-      margin-left: 0;
+      margin-left: 90px;
     }
   
     #main-content {
       transition: 0.4s;
     }
-    .offcanvas-start {
-      width: 220px !important;
-      margin-left: 90px !important;
-  }
-.add{
+.main{
     margin-top: 90px;
-    margin-left: 20px;
+    margin-left: 150px;
 }
 .btn-add{
     position: absolute;
@@ -98,5 +134,5 @@ body{
 }
 .card{
     margin-top: 60px;
-
+    margin-left: 150px;
 }

@@ -1,15 +1,17 @@
-
 body{
-  background-color: #E5E5E5;
+  background-color: #F4F5F7;
 }
 .navbar{
   background-color: white;
   margin: -15px;
   padding-top: 20px;
+  margin-left: 60px;
   padding-bottom: 15px;
   padding-right: 85px;
 }
-
+.ic-menu{
+  margin-left: 150px;
+}
 .form-search{
   margin-right: -70px;
 }
@@ -18,74 +20,99 @@ body{
   border-color: #0D28A6;
   color: #0D28A6;
 }
+.sidenav {
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0D28A6;
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-right: 10px;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+  
+.main {
+  margin-left: 160px;
+  font-size: 28px; 
+  padding: 0px 10px;
+}
 .sidebar{
-    position: absolute;
-    top: 0;
-    background-color: #0D28A6;
+  position: absolute;
+  top: 0;
+  margin-top: 50px;
+  background-color: white;
 }
 .btn-menu{
-    background-color: transparent;
-    border-color: transparent;
-
+  background-color: transparent;
+  border-color: transparent;
 }
 li {
-    list-style: none;
-
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  .sidebar {
-    width: 90px;
-    font-size: 12px;
-    height: 100vh;
-    position: fixed;
-    margin-left: -300px;
-    transition: 0.4s;
-  }
-
-  .active-main-content {
-    margin-left: 90px;
-  }
-
-  .active-sidebar {
-    margin-left: 0;
-  }
-
-  #main-content {
-    transition: 0.4s;
-  }
-    .sidebar {
-    width: 90px;
-    font-size: 12px;
-    height: 100vh;
-    position: fixed;
-    margin-left: -300px;
-    transition: 0.4s;
-  }
-
-  .active-main-content {
-    margin-left: 90px;
-  }
-
-  .active-sidebar {
-    margin-left: 0;
-  }
-
-  #main-content {
-    transition: 0.4s;
-  }
-  .offcanvas-start {
-    width: 220px !important;
-    margin-left: 90px !important;
+  list-style: none;
 }
-.card{
-  margin-top: 30px;
+a {
+  text-decoration: none;
+}
+.sidebar {
+  width: 90px;
+  font-size: 12px;
+  color: black;
+  height: 100vh;
+  position: fixed;
+  margin-left: -300px;
+  transition: 0.4s;
+}
+.active-main-content {
+  margin-left: 150px;
+}
+.active-sidebar {
+  margin-left: 0;
+}
+#main-content {
+  transition: 0.4s;
+}
+.htext{
+  color: black;
+}
+.sidebar {
+  width: 200px;
+  font-size: 25px;
+  color: black;
+  height: 100vh;
+  position: fixed;
+  margin-left: -300px;
+  transition: 0.4s;
+}
+.active-main-content {
+  margin-left: 150px;
+}
+.active-sidebar {
+  margin-left: 90px;
+}
+#main-content {
+  transition: 0.4s;
+}
+.add{
+    margin-top: 90px;
+    margin-left: 150px;
 }
 .add h4{
   margin-top: 90px;
+}
+.card{
+  padding-right: 400px;
+  margin-right: 30px;
 }
 .nama{
   margin-right: 60px;
@@ -94,7 +121,7 @@ li {
   margin-right: 15px;
 }
 .ukuran{
-  margin-right: 59px;
+  margin-right: 56px;
 }
 .foto{
   margin-right: 70px;
@@ -103,10 +130,8 @@ li {
   width: 90px;
   position: absolute;
   color: #0D28A6;
-  border-color: #0D28A6;
-  bottom: 0;
-  left: 0;
-  margin-right: 30px;
+  margin-right: 300px;
+  margin-top: 100px;
 }
 .btn-af{
   width: 90px;
@@ -114,7 +139,7 @@ li {
   color: white;
   border-color: transparent;
   position: absolute;
-  bottom: 0;
-  margin-left: 90px;
+  margin-top: 100px;
+  margin-left: 120px;
 }
 
