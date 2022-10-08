@@ -15,17 +15,40 @@
         <link rel="stylesheet" href="css/index.style.css">
       </head>
       <%- include ("partial/_navbar") -%> 
-      <body>
+      <body>  
         <div class="p-1" id="main-content">
-          <div class="main">
-            <h4>Dashboard</h4>
-            <div class="card mt-5">
-              <div class="card-body" >
-                <p>LOREM IPSUM>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>></p>
-              </div>
+          <div class="viewListCars">
+              <div class="content">
+                <a href="add"><button class="btn-add btn-primary" > + Add New Cars</button></a>
+                  <p class="mb-4"></p>
+                  <div class="filter">
+                      <h4>List Cars</h4>
+                      <button type="submit" class="btn btn-outline-primary">All</button>
+                      <button type="submit" class="btn btn-outline-primary ms-2">Small</button>
+                      <button type="submit" class="btn btn-outline-primary ms-2">Medium</button>
+                      <button type="submit" class="btn btn-outline-primary ms-2">Large</button>
+                  </div>
+                  <div class="row mb-4 ">
+                    <% data.forEach((element)=> {%>
+                    <div class="col-4">
+                      <div class="card mt-3 me-3">
+                <img src="<%= element.foto %>" class="card-img-top" width="270" height="160" alt="...">
+                <div class="card-body">
+                    <p class="card-title"><%= element.namaMobil %> / <%= element.ukuran %></p>
+                    <p class="card-price"><%= element.harga %> / hari</p>
+                    <p class="card-upload text-muted"><img src="img/fi_clock.svg" alt=""> Updated at <%= element.updatedAt %></p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-center">
+                        <a href="#" class="btn btn-outline-danger btn-lg"><img class="icon" src="/img/fi_trash.svg" alt="" height="17">Delete</a>
+                        <a href="/update-car/<%element.id%>" class="btn btn-success btn-lg"><img class="icon" src="/img/fi_edit.svg" alt="" height="17">Edit</a>
+                    </div>
+                </div>
             </div>
+                    </div>
+                    <% }) %>
+                  </div>
+              </div>
           </div>
-        </div>
-      <%- include ("partial/_footer") -%> 
+      </div>
+        <%- include ("partial/_footer") -%> 
       </body>
     </html>

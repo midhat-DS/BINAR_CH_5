@@ -21,40 +21,52 @@
             <h4>Add New Car</h4>
             <div class="card mt-5">
               <div class="card-body" >
-                <form>
+                <form action="/add-car" method="post" enctype="multipart/form-data">
+                  <label for="namaMobil">Nama</label>
+                  <input type="text" name="namaMobil" id="namaMobil">
+                  <label for="harga">harga per hari</label>
+                  <input type="text" name="harga" id="harga">
+                  <label for="ukuran">ukuran</label>
+                  <select name="ukuran" id="ukuran">
+                    <option value="small" disable select hidden> small </option>
+                    <option value="medium">medium</option>
+                    <option value="large">large</option>
+                  <label for="foto">foto</label>
+                  <input type="file" name="foto" id="foto">
+                  <button type="submit">Save</button>
+              </form>
+                <!-- <form action="/add-car" method="post" enctype="multipart/form-data">
                 <div class="d-flex mb-3 ">
                   <label class="form-label nama">Nama</label>
-                  <input  class="form-control" id="nama" placeholder="avanza" >
-                  <div id="nama" class="form-text">
+                  <input  class="form-control" name="namaMobil" id="namaMobil" placeholder="avanza" >
+                  <div id="namaMobil" class="form-text">
                   </div>
                 </div>
                 <div class="d-flex mb-3 ">
                   <label class="form-label sewa">Sewa per Hari</label>
-                    <input  class="form-control" id="sewa" placeholder="Rp.000.000">
-                    <div id="sewa" class="form-text">
+                    <input  class="form-control" name="harga" id="harga" placeholder="Rp.000.000">
+                    <div id="harga" class="form-text">
                     </div>
                 </div>
                 <div class="d-flex mb-3 ">
                   <label for="ukuran" class="form-label ukuran">ukuran</label>
-                  <select class="form-select form-item  " aria-label="Default select example" placeholder="small" id="ukuran">
+                  <select class="form-select form-item  " aria-label="Default select example" placeholder="small" name="ukuran" id="ukuran">
                     <option value="" disable select hidden> small </option>
                     <option value="Dengan sopir">medium</option>
                     <option value="Tanpa sopir">big</option>
                   </select>
                 </div>
                 <div class="d-flex mb-3">
-                  <label class="form-label foto ">Foto</label>
-                  <input  class="form-control " id="foto" placeholder="https://placeimg.com/640/480/any">
-                  <div id="foto " class="form-text">
-                  </div>
+                  <label for="formFile" class="form-label foto">Foto</label>
+                  <input class="form-control" type="file" name="foto" id="foto" placeholder="https://placeimg.com/640/480/any">
                 </div>
                 </form>
               </div>
             </div>
             <button class="btn-cf btn-primary"> cancel</button>
-            <button class="btn-af btn-primary"> save</button>
+            <a href="carlist"><button class="btn-af btn-primary" type="submit"> save</button></a>
           </div>
-        </div>
+        </div> -->
       <%- include ("partial/_footer") -%> 
       </body>
     </html>

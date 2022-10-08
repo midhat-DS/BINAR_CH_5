@@ -136,3 +136,34 @@ body{
     margin-top: 60px;
     margin-left: 150px;
 }
+.btn {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+}
+.btn-lg {
+  width: 150px;
+  border-radius: 2px;
+}
+.icon {
+  margin-top: -5px;
+  padding-right: 10px;
+}
+.btn-outline-danger {
+  --bs-btn-hover-bg: #f1c7cf;
+  --bs-btn-hover-color: #FA2C5A;
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: var(--light-blue);
+}
+.card {
+  padding: 24px;
+  gap: 24px;
+  width: 351px;
+  height: 446px;
+}
+.filter{
+  margin-left: 150px;
+}
+.card-img-top {
+  margin-top: 20px;
+} 
