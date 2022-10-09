@@ -16,11 +16,11 @@ CRUD dashboard
  - open the frontend on browser (localhost:[port])
 
 # Endpoint
-  POST/cars to add cars
-  GET/cars to list cars
-  GET/cars/:id to get cars id
-  PUT/cars/:id to update cars id
-  DELETE/cars/:id to delete cars id
+  - POST/cars to add cars
+  - GET/cars to list cars
+  - GET/cars/:id to get cars id
+  - PUT/cars/:id to update cars id
+  - DELETE/cars/:id to delete cars id
   
   # db Diagram
  
