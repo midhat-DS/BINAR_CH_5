@@ -52,19 +52,19 @@ app.post(
         console.log(req);
     }
 );
-    app.get('/update-car/:id', async (req, res) => {
+    app.get('/update/:id', async (req, res) => {
         try {
             const id = req.params.id;
     
             const cars = await axios.get(`http://localhost:8001/cars/${id}`);
-            res.render('/edit', cars.data)
+            res.render('edit', cars.data)
         } catch (err) {
             res.status(500).json(err)
         }
     })
     
     app.post(
-        "/update-car/:id",
+        "/update/:id",
         uploadOnMemory.single("foto"),
         (req, res) => {
             const fileBase64 = req.file.buffer.toString("base64");

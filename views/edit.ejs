@@ -12,7 +12,7 @@
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
         />
-        <link rel="stylesheet" href="css/add.style.css">
+        <link rel="stylesheet" href="/css/add.style.css">
       </head>
       <body>
       <%- include ("partial/_navbar") -%> 
@@ -21,19 +21,33 @@
               <h4>Update Car </h4>
               <div class="card mt-5">
                 <div class="card-body" >
-                  <form action="/update-car/<%= data.id %>" method="post" enctype="multipart/form-data">
-                    <label for="namaMobil">Nama</label>
-                    <input type="text" name="namaMobil" id="namaMobil" value="<%= data.namaMobil %>">
-                    <label for="harga">harga per hari</label>
-                    <input type="text" name="harga" id="harga" value="<%= data.harga %>">
-                    <label for="ukuran">ukuran</label>
-                    <select name="ukuran" id="ukuran">
-                      <option value="small" disable select hidden> small </option>
-                      <option value="medium">medium</option>
-                      <option value="large">large</option>
-                    <label for="foto">foto</label>
-                    <input type="file" name="foto" id="foto" value="<%= data.foto %>">
-                    <button type="submit">Save</button>
+                  <form action="/update/<%= data?.id %> " method="post" enctype="multipart/form-data">
+                    <div class="d-flex mb-3 ">
+                      <label class="form-label nama-in">Nama</label>
+                      <input  class="form-control" name="namaMobil" id="namaMobil" value="<%= data?.namaMobil %>" >
+                      <div id="namaMobil" class="form-text">
+                      </div>
+                    </div>
+                    <div class="d-flex mb-3 ">
+                      <label class="form-label harga-in">Sewa per Hari</label>
+                        <input  class="form-control" name="harga" id="harga"value="<%= data?.harga %>">
+                        <div id="harga" class="form-text">
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3 ">
+                      <label for="ukuran" class="form-label ukuran-in">ukuran</label>
+                      <select class="form-select form-item  " aria-label="Default select example" placeholder="small" name="ukuran" id="ukuran">
+                        <option value="small"> small </option>
+                        <option value="medium">medium</option>
+                        <option value="large">large</option>
+                      </select>
+                    </div>
+                    <div class="d-flex mb-3">
+                      <label for="formFile" class="form-label foto-in">Foto</label>
+                      <input class="form-control" type="file" name="foto" id="foto" value="<%= data?.foto %>">
+                    </div>
+                    <button class="btn-cf btn-primary" type="reset"> cancel</button>
+                    <button class="btn-af btn-primary" type="submit"> save</button>
                 </form>
             </div>
       <%- include ("partial/_footer") -%> 

@@ -114,18 +114,19 @@ a {
   padding-right: 400px;
   margin-right: 30px;
 }
-.nama{
+.nama-in{
   margin-right: 60px;
 }
-.sewa{
+.harga-in{
   margin-right: 15px;
 }
-.ukuran{
+.ukuran-in{
   margin-right: 56px;
 }
-.foto{
+.foto-in{
   margin-right: 70px;
 }
+
 .btn-cf{
   width: 90px;
   position: absolute;

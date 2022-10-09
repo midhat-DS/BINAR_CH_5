@@ -133,7 +133,7 @@ body{
     color: white;
 }
 .card{
-    margin-top: 60px;
+    margin-top: 90px;
     margin-left: 150px;
 }
 .btn {
@@ -160,6 +160,7 @@ body{
   gap: 24px;
   width: 351px;
   height: 446px;
+  margin-top: 90px;
 }
 .filter{
   margin-left: 150px;

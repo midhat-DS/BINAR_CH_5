@@ -12,7 +12,7 @@
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
         />
-        <link rel="stylesheet" href="css/index.style.css">
+        <link rel="stylesheet" href="/css/index.style.css">
       </head>
       <%- include ("partial/_navbar") -%> 
       <body>  
@@ -36,10 +36,10 @@
                 <div class="card-body">
                     <p class="card-title"><%= element.namaMobil %> / <%= element.ukuran %></p>
                     <p class="card-price"><%= element.harga %> / hari</p>
-                    <p class="card-upload text-muted"><img src="img/fi_clock.svg" alt=""> Updated at <%= element.updatedAt %></p>
+                    <p class="card-upload text-muted"><img src="/img/fi_clock.svg" alt=""> Updated at <%= element.updatedAt %></p>
                     <div class="d-grid gap-2 d-md-flex justify-content-center">
-                        <a href="#" class="btn btn-outline-danger btn-lg"><img class="icon" src="/img/fi_trash.svg" alt="" height="17">Delete</a>
-                        <a href="/update-car/<%element.id%>" class="btn btn-success btn-lg"><img class="icon" src="/img/fi_edit.svg" alt="" height="17">Edit</a>
+                        <a href="/delete-car/<%= element.id %> "  class="btn btn-outline-danger btn-lg"><img class="icon" src="/img/fi_trash.svg" alt="" height="17">Delete</a>
+                        <a href="/update/<%= element.id %> " class="btn btn-success btn-lg"><img class="icon" src="/img/fi_edit.svg" alt="" height="17">Edit</a>
                     </div>
                 </div>
             </div>
