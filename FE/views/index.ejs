@@ -15,14 +15,22 @@
         <link rel="stylesheet" href="/css/index.style.css">
       </head>
       <%- include ("partial/_navbar") -%> 
+      
+
       <body>  
         <div class="p-1" id="main-content">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">cars</a></li>
+              <li class="breadcrumb-item active" aria-current="page">list cars</li>
+            </ol>
+          </nav>
           <div class="viewListCars">
               <div class="content">
-                <a href="add"><button class="btn-add btn-primary" > + Add New Cars</button></a>
+               
                   <p class="mb-4"></p>
                   <div class="filter">
-                      <h4>List Cars</h4>
+                      <h4>List Cars <a href="add"><button class="btn-add btn-primary " > + Add New Cars</button></a></h4>
                       <button type="submit" class="btn btn-outline-primary">All</button>
                       <button type="submit" class="btn btn-outline-primary ms-2">Small</button>
                       <button type="submit" class="btn btn-outline-primary ms-2">Medium</button>

@@ -46,7 +46,10 @@ body{
   .sidenav a:hover {
     color: #f1f1f1;
   }
-  
+  .breadcrumb{
+    margin-top: 90px;
+    margin-left: 150px;
+  }
   .main {
     margin-left: 160px;
     font-size: 28px; 
@@ -122,15 +125,16 @@ body{
     margin-left: 150px;
 }
 .btn-add{
-    position: absolute;
-    right: 0;
     margin-right: 30px;
     margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 1200px;
     width: 150px;
     height: 60px;
     background-color: #0D28A6;
     border: transparent;
     color: white;
+    font-size:medium;
 }
 .card{
     margin-top: 90px;
@@ -160,7 +164,7 @@ body{
   gap: 24px;
   width: 351px;
   height: 446px;
-  margin-top: 90px;
+  margin-top: 20px;
 }
 .filter{
   margin-left: 150px;

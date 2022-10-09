@@ -16,7 +16,15 @@
       </head>
       <body>
       <%- include ("partial/_navbar") -%> 
+
           <div class="p-1" id="main-content">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Cars</a></li>
+                <li class="breadcrumb-item"><a href="/">list cars</a></li>
+                <li class="breadcrumb-item active" aria-current="page">edit cars</li>
+              </ol>
+            </nav>
             <div class="add">
               <h4>Update Car </h4>
               <div class="card mt-5">

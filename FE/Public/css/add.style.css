@@ -42,7 +42,10 @@ body{
 .sidenav a:hover {
   color: #f1f1f1;
 }
-  
+.breadcrumb{
+  margin-top: 90px;
+  margin-left: 150px;
+}
 .main {
   margin-left: 160px;
   font-size: 28px; 

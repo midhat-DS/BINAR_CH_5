@@ -15,8 +15,17 @@
         <link rel="stylesheet" href="/css/add.style.css">
       </head>
       <%- include ("partial/_navbar") -%> 
+      
+
       <body>
         <div class="p-1" id="main-content">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Cars</a></li>
+              <li class="breadcrumb-item"><a href="/">list cars</a></li>
+              <li class="breadcrumb-item active" aria-current="page">add new cars</li>
+            </ol>
+          </nav>
           <div class="add">
             <h4>Add New Car</h4>
             <div class="card mt-5">
