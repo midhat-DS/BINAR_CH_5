@@ -43,7 +43,7 @@
                 <img src="<%= element.foto %>" class="card-img-top" width="270" height="160" alt="...">
                 <div class="card-body">
                     <p class="card-title"><%= element.namaMobil %> / <%= element.ukuran %></p>
-                    <p class="card-price"><%= element.harga %> / hari</p>
+                    <p class="card-price">Rp. <%= element.harga %> / hari</p>
                     <p class="card-upload text-muted"><img src="/img/fi_clock.svg" alt=""> Updated at <%= element.updatedAt %></p>
                     <div class="d-grid gap-2 d-md-flex justify-content-center">
                         <a href="/delete-car/<%= element.id %> "  class="btn btn-outline-danger btn-lg"><img class="icon" src="/img/fi_trash.svg" alt="" height="17">Delete</a>
